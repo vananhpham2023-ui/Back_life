@@ -1,0 +1,12 @@
+# Local SDK config
+local.properties
+
+# IDE
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+
+# Build outputs
+**/build/

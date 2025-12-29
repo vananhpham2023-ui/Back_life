@@ -1,0 +1,29 @@
+build:
+  maxIssues: 999
+  excludeCorrectable: false
+
+config:
+  validation: true
+  warningsAsErrors: false
+  checkExhaustiveness: false
+  # Path excludes are enforced in Gradle tasks; kept here for audit visibility.
+  excludes: '.*[\\/]build[\\/].*,.*[\\/]generated[\\/].*,.*[\\/]schema[\\/].*,.*[\\/]schemas[\\/].*'
+
+processors:
+  active: true
+  exclude:
+    - 'DetektProgressListener'
+
+console-reports:
+  active: true
+  exclude:
+    - 'ProjectStatisticsReport'
+    - 'ComplexityReport'
+    - 'NotificationReport'
+    - 'FindingsReport'
+    - 'FileBasedFindingsReport'
+
+output-reports:
+  active: true
+  exclude:
+    - 'TxtOutputReport'
